@@ -51,4 +51,5 @@ gem 'sprockets', '2.11.0'
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
