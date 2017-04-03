@@ -113,44 +113,31 @@
 
 <script src = "http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
 <script>
-jQuery(function($){
+var flag;
+var min_width = 768;
 
-  var min_width = 768;
-  //画面幅による分岐とMasonry のイニシャライズを関数化
-  function masonry_update() {
-    var $container = $('#container');
+function check() {
     if ( $('html').width() < min_width ) {
-      $container.masonry('destroy');
+        if ( flag ) {
+            $('#container').masonry('destroy');
+            flag = 0;
+        }
     } else {
-        $container.masonry({
-          itemSelector: '.item',
-          columnWidth: 300,
-          gutter: 4
+        $('#container').masonry({
+		        itemSelector: '.item',
+					  columnWidth: 300,
+					  gutter: 4
         });
+        flag = 1;
     }
-  }
+}
 
-  masonry_update();
-
-  //リサイズ時の処理
-  var timer = false;
-  $(window).resize(function(){
-    if (timer !== false) {
-      clearTimeout(timer);
-    }
-    timer = setTimeout(function() {
-      masonry_update();
-    }, 200);
-  });
+$(function(){
+    check();
 });
+
+$(window).resize(function () {
+    check();
+});
+
 </script>
-<!-- 
-<script>
-    window.onload = function(){
-			  new Masonry('body', {
-			  itemSelector: '.item',
-			  columnWidth: 300,
-			  gutter: 4
-		  });
-	  }
-</script> -->
