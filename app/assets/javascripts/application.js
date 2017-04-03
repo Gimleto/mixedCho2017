@@ -15,3 +15,19 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+$(function(){
+  function Modal(){
+      $('#gnav_botton').animatedModal({
+          modalTarget:'animatedModal',
+          animatedIn: 'bounceInUp', //表示する時のアニメーション
+          animatedOut: 'bounceOutDown', //閉じる時のアニメーション
+          animationDuration:'0.5s', //アニメーションにかける秒数
+          color:'#15b7ff', //背景色
+      });
+  };
+
+  $(window).ready(function(){
+      Modal();
+  });
+});
