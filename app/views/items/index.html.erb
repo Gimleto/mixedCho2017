@@ -124,18 +124,25 @@
 	   	}
 	};
 	function initialize_masonry(){
+			var $container = $('#container').masonry();
 	    if (flag) {
-	    		new Masonry('body', {
+	    		$container.masonry({
 			        itemSelector: '.item',
 			        isFitWidth: true,
 						  columnWidth: 300,
 						  gutter: 4
 	        });
 	    }else{
+	    		$container.masonry('destroy');
 	    }
 	};
 
-	$(window).load(function (){
+	$(window).ready(function (){
+			check();
+			initialize_masonry();
+	});
+
+	$(window).resize(function (){
 			check();
 			initialize_masonry();
 	});
