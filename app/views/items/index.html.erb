@@ -117,27 +117,32 @@
 	var min_width = 768;
 
 	function check() {
-	    if (window.innerWidth < min_width ) {
-	        if ( flag ) {
-	            $('#container').masonry('destroy');
-	            flag = 0;
-	        }
-	    } else {
-	        $('#container').masonry({
+	    if(window.innerWidth < min_width ){
+	    	flag = 1;
+	   	}else{
+	   		flag = 0;
+	   	}
+	};
+	function initialize_masonry(){
+	    if (flag) {
+	    		new Masonry('body', {
 			        itemSelector: '.item',
+			        isFitWidth: true,
 						  columnWidth: 300,
 						  gutter: 4
 	        });
-	        flag = 1;
+	    }else{
 	    }
-	}
+	};
 
 	$(window).load(function (){
 			check();
+			initialize_masonry();
 	});
 
 	$(window).resize(function (){
 	    check();
+	    initialize_masonry();
 	});
 
 </script>
