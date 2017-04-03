@@ -118,9 +118,9 @@
 
 	function check() {
 	    if(window.innerWidth < min_width ){
-	    	flag = 1;
+	    	flag = 0;
 	   	}else{
-	   		flag = 0;
+	   		flag = 1;
 	   	}
 	};
 	function initialize_masonry(){
@@ -139,10 +139,4 @@
 			check();
 			initialize_masonry();
 	});
-
-	$(window).resize(function (){
-	    check();
-	    initialize_masonry();
-	});
-
 </script>
