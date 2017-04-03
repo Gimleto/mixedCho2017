@@ -113,31 +113,31 @@
 
 <script src = "http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
 <script>
-var flag;
-var min_width = 768;
+	var flag;
+	var min_width = 768;
 
-function check() {
-    if ( $('html').width() < min_width ) {
-        if ( flag ) {
-            $('#container').masonry('destroy');
-            flag = 0;
-        }
-    } else {
-        $('#container').masonry({
-		        itemSelector: '.item',
-					  columnWidth: 300,
-					  gutter: 4
-        });
-        flag = 1;
-    }
-}
+	function check() {
+	    if (window.innerWidth < min_width ) {
+	        if ( flag ) {
+	            $('#container').masonry('destroy');
+	            flag = 0;
+	        }
+	    } else {
+	        $('#container').masonry({
+			        itemSelector: '.item',
+						  columnWidth: 300,
+						  gutter: 4
+	        });
+	        flag = 1;
+	    }
+	}
 
-$(function(){
-    check();
-});
+	$(window).load(function (){
+			check();
+	});
 
-$(window).resize(function () {
-    check();
-});
+	$(window).resize(function (){
+	    check();
+	});
 
 </script>
