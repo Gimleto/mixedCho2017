@@ -6,21 +6,41 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 </head>
 <body>
-  <%= yield %>
-
-  <div class="menu-btn" id="js__btn">
-      <span data-txt-menu="MENU" data-txt-close="CLOSE"></span>
+  <div id="gnav">
+    <a id="gnav_botton" class="open" href="#animatedModal">
+      <%= image_tag 'gnav.png', :alt => "menu", :class => "image" %>
+    </a>
+    <div id="animatedModal">
+      <div class="row">
+          <div class="close-animatedModal close col-xs-12">
+              <%= image_tag 'gnavClose.png', :alt => "close", :class => "center-block" %>
+          </div>
+      </div>
+      <div id="modal-content">
+          <ul>
+              <div class="row">
+              <li class="col-xs-12"><a href="#">団紹介</a></li>
+              </div>
+              <div class="row">
+              <li class="col-xs-12"><a href="#">新歓イベント</a></li>
+              </div>
+              <div class="row">
+              <li class="col-xs-12"><a href="#">年間イベント</a></li>
+              </div>
+              <div class="row">
+              <li class="col-xs-12"><a href="#">練習内容</a></li>
+              </div>
+              <div class="row">
+              <li class="col-xs-12"><a href="#">混声Q&A</a></li>
+              </div>
+          </ul>
+      </div>
+      </div>
+    </div>
   </div>
-  <nav class="menu" id="js__nav">
-      <ul>
-          <li><a href="#">団紹介</a></li>
-          <li><a href="#">新歓イベント</a></li>
-          <li><a href="#">年間イベント</a></li>
-          <li><a href="#">練習内容</a></li>
-          <li><a href="#">混声Q&A</a></li>
-      </ul>
-  </nav>
-</body>
+  <%= yield %>
+  </body>
 </html>

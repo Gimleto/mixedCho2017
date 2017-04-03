@@ -15,3 +15,33 @@
  *= require_self
  */
 
+#gnav a.open{
+  position: fixed;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#gnav .close{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#gnav ul{
+  list-style-type:none;
+}
+
+#gnav li{
+  font-size: 2.0rem;
+  height: 2.0rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#gnav ul a{
+  color: #fff;
+}
+
+/*rgb(75, 75, 75)
+*/
