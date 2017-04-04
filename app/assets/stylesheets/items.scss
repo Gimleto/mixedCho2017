@@ -73,23 +73,23 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 	opacity:0.8;
 }
 
-.item-maindish,
-.item-maindish .category::before{
+.item-information,
+.item-information .category::before{
 	border-color: #FFC0CB;
 }
 
-.item-appetizer,
-.item-appetizer .category::before{
+.item-event,
+.item-event .category::before{
 	border-color: #76C047;
 }
 
-.item-column,
-.item-column .category::before{
+.item-annual,
+.item-annual .category::before{
 	border-color: #FFF100;
 }
 
-.item-breaktime,
-.item-breaktime .category::before{
+.item-qa,
+.item-qa .category::before{
 	border-color: #C1EFFF;
 }
 
