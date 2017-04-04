@@ -17,7 +17,7 @@ body{
 *, *::before, *::after {
 	box-sizing:border-box;
 }
-a:link, a:visited, a:hover,a:active {
+section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:active {
 	color:#7C5119;
 	text-decoration: none;
 }
@@ -68,7 +68,7 @@ a:link, a:visited, a:hover,a:active {
 	transition:all 0.3s;
 }
 
-.item > a:hover{
+.item > .Hover:hover{
 	box-shadow: 0 0 6px -1px rgba(0,0,0,0.3);
 	opacity:0.8;
 }
