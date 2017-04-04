@@ -36,7 +36,8 @@
 }
 
 #gnav li{
-  font-family: "Noto Sans Japanese";
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-weight: 300;
   font-size: 2.0rem;
   height: 2.0rem;
   text-align: center;
