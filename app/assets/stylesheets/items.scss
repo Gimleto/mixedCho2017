@@ -3,74 +3,81 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @charset "UTF-8";
 
-html{
-	font-size: 62.5%;
+
+header{
+  background-color: #FFF200;
+  height: 100vh;
 }
-body{
-	padding: 30px;
-	background-color:#f6f7fb;
-	color:#333;
-	font-size:1.2rem;
-	font-family:"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+h1, h2{
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+h1{
+  font-weight: 700;
+}
+h2{
+  font-weight: bold;
+}
+
+#container{
+	margin: 0 auto;
 }
 
 *, *::before, *::after {
 	box-sizing:border-box;
 }
 section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:active {
-	color:#7C5119;
+	color:#C8C8C8;
 	text-decoration: none;
 }
 
 .item{
-	width:300px;
 	margin-bottom: 4px;
 	padding: 8px;
 	border-bottom: 3px solid;
-	border-radius: 5px;
-	background-color: #fff;
-}
+	border-radius: 1px;
+	background-color: #F5F5F5;
 
-.item .image{
-	display:block;
-	width:100%;
-}
+		.image{
+			display:block;
+			width:100%;
+		}
 
-.item .category{
-	margin:15px 9px 10px;
-	color:#aaa;
-	letter-spacing: 1px;
-	font-family: "Trebuchet MS","Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-}
+		.category{
+			margin:15px 9px 10px;
+			padding-left: 10px;
+			color:#aaa;
+			letter-spacing: 1px;
+			font-family: "Trebuchet MS","Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+			font-weight: bold;
+			color: #34495e;
 
-.item .category::before{
-	content:'';
-	display: inline-block;
-	width:19px;
-	height: 19px;
-	margin-right: 5px;
-	border:2px solid;
-	border-radius:50%;
-	vertical-align:-5px;
-}
+				&::before{
+					content:'';
+					display: inline-block;
+					width:19px;
+					height: 19px;
+					margin-right: 5px;
+					border:2px solid;
+					border-radius:50%;
+					vertical-align:-5px;
+				}
+		}
 
-.item .description{
-	margin:10px;
-	line-height:1.5;
-}
+		.description{
+			font-color: #7f8c8d;
+			margin:10px;
+			padding-left: 10px;
+			line-height:1.5;
+		}
 
-.item > a{
-	display: block;
-	margin:-8px -8px -11px;
-	padding: 8px 8px 11px;
-	border-radius: inherit;
-	color:#777;
-	transition:all 0.3s;
-}
-
-.item > .Hover:hover{
-	box-shadow: 0 0 6px -1px rgba(0,0,0,0.3);
-	opacity:0.8;
+		.Hover{
+			&:hover{
+				box-shadow: 0 0 6px -1px rgba(0,0,0,0.3);
+				opacity:0.8;
+			}
+		}
 }
 
 .item-information,
@@ -93,6 +100,22 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 	border-color: #C1EFFF;
 }
 
-.item-m{
-	width:604px;
+@media screen and (min-width: 540px) {
+	#container{
+		margin: 0 auto;
+	}
+
+	.item{
+		width:300px;
+	}
+	.item-m{
+		width:604px;
+	}
+}
+
+@media screen and (max-width: 539px) {
+	.movie,
+	#calender{
+		display:none;
+	}
 }

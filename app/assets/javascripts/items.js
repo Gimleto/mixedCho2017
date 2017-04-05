@@ -1,14 +1,4 @@
 $(function(){
-
-  // var $body = $('body');
-  // $('#js__btn').on('click', function(){
-  //   $body.toggleClass('open');
-  // });
-
-  // $('#js__nav').on('click', function(){
-  //   $body.removeClass('open')
-  // });
-
   var flag;
   var min_width = 540;
 
@@ -19,6 +9,16 @@ $(function(){
         flag = 1;
       }
   };
+
+  function bootstrap(){
+    var $item = $('.item');
+    if(flag){
+         $item.removeClass('col-xs-12');
+    }else{
+         $item.toggleClass('col-xs-12');
+    }
+  };
+
   function initialize_masonry(){
       var $container = $('#container').masonry();
       if (flag) {
@@ -36,11 +36,13 @@ $(function(){
   $(window).ready(function (){
       check();
       initialize_masonry();
+      bootstrap();
   });
 
   $(window).resize(function (){
       check();
       initialize_masonry();
+      bootstrap();
   });
 
 });

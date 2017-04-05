@@ -7,41 +7,53 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 <body>
-  <div id="gnav">
-    <a id="gnav_botton" class="open" href="#animatedModal">
-      <%= image_tag 'gnav.png', :alt => "menu", :class => "image" %>
-    </a>
-    <div id="animatedModal">
-      <div class="row">
-          <div class="close-animatedModal close col-xs-12">
-              <%= image_tag 'gnavClose.png', :alt => "close", :class => "center-block" %>
-          </div>
-      </div>
-      <div id="modal-content">
-          <ul>
-              <div class="row">
-              <li class="col-xs-12"><a href="#">団紹介</a></li>
-              </div>
-              <div class="row">
-              <li class="col-xs-12"><a href="#">新歓イベント</a></li>
-              </div>
-              <div class="row">
-              <li class="col-xs-12"><a href="#">年間イベント</a></li>
-              </div>
-              <div class="row">
-              <li class="col-xs-12"><a href="#">練習内容</a></li>
-              </div>
-              <div class="row">
-              <li class="col-xs-12"><a href="#">混声Q&A</a></li>
-              </div>
-          </ul>
-      </div>
+  <div id="wrapper">
+    <div id="gnav">
+      <a id="gnav_botton" class="open" href="#animatedModal">
+        <%= image_tag 'gnavOpen.png', :alt => "menu", :class => "image" %>
+      </a>
+      <div id="animatedModal">
+        <div class="row">
+            <div class="close-animatedModal close col-xs-12">
+                <%= image_tag 'gnavClose.png', :alt => "close", :class => "center-block"%>
+            </div>
+        </div>
+        <div id="modal-content">
+            <ul>
+                <div class="row">
+                <li class="col-xs-12"><a href="#">団紹介</a></li>
+                </div>
+                <div class="row">
+                <li class="col-xs-12"><a href="#">新歓イベント</a></li>
+                </div>
+                <div class="row">
+                <li class="col-xs-12"><a href="#">年間イベント</a></li>
+                </div>
+                <div class="row">
+                <li class="col-xs-12"><a href="#">練習内容</a></li>
+                </div>
+                <div class="row">
+                <li class="col-xs-12"><a href="#">混声Q&A</a></li>
+                </div>
+            </ul>
+        </div>
       </div>
     </div>
   </div>
+  <div class="row">
+    <header id="header" class="col-xs-12">
+      <h1> W Tohoku Univ Mixed Chorus</h1>
+    </header>
+  </div>
+  <div class="row">
   <%= yield %>
-  </body>
+  </div>
+  <div class="row">
+    <footer class="col-xs-12">
+    </footer>
+  </div>
+</body>
 </html>
