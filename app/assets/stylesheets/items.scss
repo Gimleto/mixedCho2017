@@ -10,15 +10,25 @@ header{
   height: 100vh;
 }
 
-h1, h2{
-  font-family: 'Raleway', Arial, sans-serif;
+#pageTitle{
+	margin-top: 40px;
 }
 
-h1{
-  font-weight: 700;
+#pageTitle,
+#secondSection h2{
+	margin-bottom: 40px;
 }
-h2{
-  font-weight: bold;
+
+header h1,
+#secondSection h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	color: #242424;
+}
+
+#topSection,
+#secondSection{
+	margin-bottom:40px;
 }
 
 #container{
@@ -115,8 +125,27 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 }
 
 @media screen and (max-width: 539px) {
+	#pageTitle {
+    font-size: 2.5rem;
+  }
+
+  #secondSection h2{
+  	font-size: 2.5rem;
+  }
+
 	.movie,
 	#calender{
 		display:none;
 	}
 }
+
+@media screen and (min-width: 539px){
+  #secondSection h2{
+  	font-size: 3.5rem;
+  }
+
+	#pageTitle{
+		font-size: 5.0rem;
+	}
+}
+

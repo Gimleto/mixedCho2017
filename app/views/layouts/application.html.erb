@@ -7,6 +7,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
 </head>
 <body>
   <div id="wrapper">
@@ -30,15 +31,24 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <header id="header" class="col-xs-12">
-      <h1>Tohoku Univ Mixed Chorus</h1>
+  <div  id="topSection" class="row">
+    <header class="col-xs-12 Heading text-center">
+      <h1 id="pageTitle">Tohoku Univ<br>Mixed Chorus</h1>
     </header>
   </div>
+  <div id="secondSection">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="Heading">About us</h2>
+      </div>
+    </div>
   <%= yield %>
+  </div>
   <div class="row">
-    <footer class="col-xs-12">
-    </footer>
+    <div class="col-xs-12">
+      <footer>
+      </footer>
+    </div>
   </div>
 </body>
 </html>

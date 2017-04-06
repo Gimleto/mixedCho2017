@@ -18,11 +18,11 @@
 html{
   font-size: 62.5%;
 }
+
 body{
   background-color:#F5F5F5;
   color:#333;
   font-size:1.2rem;
-  font-family:"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 p{
@@ -70,7 +70,7 @@ footer{
   background-color: #2c3e50;
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 539px){
   #gnav ul li{
     height: 1.5rem;
     margin-bottom: 2.0rem;
@@ -80,7 +80,7 @@ footer{
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 540px){
   #gnav ul li{
     height: 2.5rem;
     margin-bottom: 4.0rem;
