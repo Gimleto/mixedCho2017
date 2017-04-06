@@ -6,7 +6,19 @@
 
 header{
   background-color: #FFF200;
+  width: 100vw;
   height: 100vh;
+}
+
+h1, h2{
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+h1{
+  font-weight: 700;
+}
+h2{
+  font-weight: bold;
 }
 
 #container{
@@ -90,14 +102,12 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 }
 
 @media screen and (min-width: 540px) {
-	//#container{
-		//margin: 0 auto;
-	//}
+	#container{
+		margin: 0 auto;
+	}
 
 	.item{
 		width:300px;
-		.image{
-		}
 	}
 	.item-m{
 		width:604px;
