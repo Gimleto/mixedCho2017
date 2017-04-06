@@ -32,7 +32,6 @@ header h1,
 header p{
 	font-family: 'Noto Sans Japanese', sans-serif;
 	font-weight: 200;
-	font-size: 5.0rem;
 }
 
 #topSection,
@@ -137,7 +136,10 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 	#pageTitle {
     font-size: 2.5rem;
   }
-
+  header p{
+		font-size: 3.0rem;
+		line-height: 4.3rem;
+	}
   #secondSection h2{
   	font-size: 2.5rem;
   }
@@ -149,6 +151,10 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 }
 
 @media screen and (min-width: 539px){
+	header p{
+		font-size: 5.0rem;
+		line-height: 6.0rem;
+	}
   #secondSection h2{
   	font-size: 3.5rem;
   }
