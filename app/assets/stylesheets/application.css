@@ -32,24 +32,37 @@ p{
 #gnav a.open{
     position: fixed;
     right: 10px;
-    width: 100px;
-    height: 50px;
+    top: 10px;
     cursor: pointer;
     z-index: 100;
 }
 #modal-content{
+  padding: 20px;
 }
 
-#gnav.close{
+#closebt-container {
+    position: relative;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 70px;
+    text-align: center;
+    margin-top: 40px;
 }
-
 
 #gnav ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
   list-style-type:none;
+  display: inline-block;
+  width: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  text-align: center;
 }
+
+#gnav ul a:hover{
+  text-decoration: none;
+}
+
 
 footer{
   height: 500px;
@@ -58,13 +71,22 @@ footer{
 }
 
 @media screen and (max-width: 539px) {
+  #gnav ul li{
+    height: 1.5rem;
+    margin-bottom: 2.0rem;
+  }
+  #gnav ul a{
+    color: #fff;
+    font-size: 1.5rem;
+  }
 }
-
 @media screen and (min-width: 540px) {
+  #gnav ul li{
+    height: 2.5rem;
+    margin-bottom: 4.0rem;
+  }
  #gnav ul a{
     color: #fff;
-  }
-  #gnav ul a:hover{
-    text-decoration: none;
+    font-size: 2.5rem;
   }
 }

@@ -12,11 +12,11 @@
   <div id="wrapper">
     <div id="gnav">
       <a id="gnav_botton" class="open" href="#animatedModal">
-        <%= image_tag 'gnavOpen.png', :alt => "menu", :class => "image" %>
+        <%= image_tag 'gnavOpen.png', :alt => "menu", :class => "image", :size => '50x50'%>
       </a>
       <div id="animatedModal">
-        <div class="close-animatedModal close">
-          <%= image_tag 'gnavClose.png', :alt => "close", :class => "center-block"%>
+        <div id="closebt-container" class="close-animatedModal close">
+          <%= image_tag 'gnavClose.png', :alt => "close", :size => '50x50'%>
         </div>
         <div id="modal-content">
             <ul>
@@ -32,7 +32,7 @@
   </div>
   <div class="row">
     <header id="header" class="col-xs-12">
-      <h1> W Tohoku Univ Mixed</h1>
+      <h1>Tohoku Univ Mixed Chorus</h1>
     </header>
   </div>
   <%= yield %>
