@@ -45,7 +45,7 @@ header p{
 
 #header-contents p{
 	font-size: 1.7rem;
-	line-height:2.0rem;
+	line-height:2.5rem;
 }
 #topSection,
 #secondSection{
@@ -155,6 +155,13 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 		font-size: 3.0rem;
 		line-height: 4.3rem;
 	}
+
+	#header-contents #music,
+	#header-contents #event,
+	#header-contents #colleague{
+		margin-bottom: 30px;
+	}
+
   #secondSection h2{
   	font-size: 2.5rem;
   }
@@ -182,7 +189,7 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 }
 @media screen and (max-width:767px){
 	header{
-  	height: 170vh;
+  	height: 180vh;
 	}
 }
 
