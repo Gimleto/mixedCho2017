@@ -32,8 +32,7 @@ p{
 #gnav a.open{
     position: fixed;
     right: 10px;
-    width: 100px;
-    height: 50px;
+    top: 10px;
     cursor: pointer;
     z-index: 100;
 }
@@ -41,12 +40,12 @@ p{
   padding: 20px;
 }
 
-#gnav.close{
+#closebt-container {
+    position: relative;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 70px;
+    text-align: center;
+    margin-top: 40px;
 }
-
 
 #gnav ul{
   position: absolute;
@@ -83,11 +82,11 @@ footer{
 }
 @media screen and (min-width: 540px) {
   #gnav ul li{
-    height: 3.5rem;
+    height: 2.5rem;
     margin-bottom: 4.0rem;
   }
  #gnav ul a{
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
