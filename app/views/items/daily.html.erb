@@ -1,16 +1,32 @@
-<div id="container">
-  <div class="row">
-    <section class ="item item-m item-information movie">
-       <div class="Hover">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pmD4bKCSPgw" frameborder="0" allowfullscreen></iframe>
-          <div class="category">
-            新歓情報
-          </div>
-          <p class="description">
-            今年も新歓PV完成しました！1年間の活動を様子をスライドショーで、私たちの演奏に乗せて紹介しています。ぜひ見てください！<br>
-            <a>団紹介ページはこちらから</a>
-          </p>
-       </div>
-    </section>
+<% content_for :headercontents do %>
+  <div id="gnav">
   </div>
-</div>
+  <div id="topSection" class="row">
+  </div>
+<% end %>
+
+<% content_for :main do %>
+  <div id="secondSection">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="Heading">Check it out!</h2>
+      </div>
+    </div>
+    <div id="container">
+        <div class="row">
+        <section class ="item item-m item-event">
+           <div class="Hover">
+              <%= image_tag 'TopImage_001.jpg', :alt => "メインディッシュ", :class => "image" %>
+              <div class="category">
+                新歓イベント
+              </div>
+              <p class="description">
+                去年の新歓コンパは片平キャンパスのさくらキッチンで行いました！優しい先輩たちと仲良くなれる大チャンスです！<br>
+                <a>新歓イベントページはこちらから</a>
+              </p>
+           </div>
+        </section>
+      </div>
+    </div>
+  </div>
+<% end %>
