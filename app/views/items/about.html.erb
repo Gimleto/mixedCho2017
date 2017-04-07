@@ -1,1 +1,32 @@
-about
+<% content_for :headercontents do %>
+  <div id="gnav">
+  </div>
+  <div id="topSection" class="row">
+  </div>
+<% end %>
+
+<% content_for :main do %>
+  <div id="secondSection">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="Heading">Check it out!</h2>
+      </div>
+    </div>
+    <div id="container">
+        <div class="row">
+        <section class ="item item-m item-event">
+           <div class="Hover">
+              <%= image_tag 'TopImage_001.jpg', :alt => "メインディッシュ", :class => "image" %>
+              <div class="category">
+                新歓イベント
+              </div>
+              <p class="description">
+                去年の新歓コンパは片平キャンパスのさくらキッチンで行いました！優しい先輩たちと仲良くなれる大チャンスです！<br>
+                <a>新歓イベントページはこちらから</a>
+              </p>
+           </div>
+        </section>
+      </div>
+    </div>
+  </div>
+<% end %>
