@@ -115,7 +115,7 @@ footer p{
 @media screen and (max-width: 539px){
   #gnav ul li{
     height: 1.5rem;
-    margin-bottom: 2.0rem;
+    margin-bottom: 3.0rem;
   }
   #gnav ul a{
     color: #fff;
