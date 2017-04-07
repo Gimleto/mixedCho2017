@@ -31,6 +31,10 @@ p{
   color: #2c3e50;
 }
 
+.daily p{
+  font-size:1.3rem;
+  line-height: 1.7rem;
+}
  p .subHeading{
   font-size:1.8rem;
   line-height: 5.0rem;
