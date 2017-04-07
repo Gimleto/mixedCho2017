@@ -31,6 +31,11 @@ p{
   color: #2c3e50;
 }
 
+ p .subHeading{
+  font-size:1.8rem;
+  line-height: 5.0rem;
+}
+
 #gnav a.open{
     position: fixed;
     right: 10px;
