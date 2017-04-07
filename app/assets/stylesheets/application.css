@@ -38,6 +38,7 @@ p{
  p .subHeading{
   font-size:1.8rem;
   line-height: 5.0rem;
+  border-bottom: rgba(0,203,50,0.8) 2px dotted;
 }
 
 #gnav a.open{
