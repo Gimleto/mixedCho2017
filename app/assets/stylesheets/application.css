@@ -39,7 +39,7 @@ p{
   font-size:1.8rem;
   line-height: 5.0rem;
   padding-bottom: 5px;
-  border-bottom: rgba(0,203,50,0.8) 2px dotted;
+  border-bottom: #363947 2px dotted;
 }
 
 #gnav a.open{
