@@ -79,13 +79,20 @@ p{
 
 #gnav nav{
     background-color: #FFF200;
-    height: 50px;
+    height: 40px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    list-style-type:none;
 }
 
 #gnav nav a{
   color: #242424;
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+#gnav nav a:hover{
+  text-decoration: none;
 }
 
 footer{
