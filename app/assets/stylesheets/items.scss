@@ -187,7 +187,7 @@ section.Hover:link, section.Hover:visited, section.Hover:hover, section.Hover:ac
 		font-size: 5.0rem;
 	}
 }
-@media screen and (max-width:767px){
+@media screen and (min-width: 540px) and (max-width:767px){
 	header{
   	height: 250vh;
 	}
