@@ -51,13 +51,16 @@ p{
     cursor: pointer;
     z-index: 100;
 }
+
+#animatedModal{
+  position: relative;
+}
 #modal-content{
   font-family: 'Raleway', Arial, sans-serif;
   padding: 20px;
 }
 
 #closebt-container {
-    position: relative;
     width: 100%;
     text-align: center;
     margin-top: 40px;
