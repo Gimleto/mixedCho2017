@@ -16,20 +16,16 @@
 //= require bootstrap
 //= require_tree .
 
-$(function(){
-  function Modal(){
-      $('#gnav_botton').animatedModal({
-          modalTarget:'animatedModal',
-          animatedIn: 'bounceInUp', //表示する時のアニメーション
-          animatedOut: 'bounceOutDown', //閉じる時のアニメーション
-          animationDuration:'0.5s', //アニメーションにかける秒数
-          color:'#15b7ff',//背景色
-      });
-  };
+$(function () {
+    var $body = $('body');
 
+    //開閉用ボタンをクリックでクラスの切替え
+    $('#modal-botton').on('click', function () {
+        $body.toggleClass('openModal');
+    });
 
-  $(window).ready(function(){
-      Modal();
-  });
-
+    //メニュー名以外の部分をクリックで閉じる
+    $('#closebtn').on('click', function () {
+        $body.removeClass('openModal');
+    });
 });

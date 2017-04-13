@@ -1,13 +1,14 @@
 <% content_for :headercontents do %>
     <div id="gnav">
-      <a id="gnav_botton" class="open" href="#animatedModal">
+      <div id="modal-botton">
         <%= image_tag 'gnavOpen.png', :alt => "menu", :class => "image", :size => '50x50'%>
-      </a>
-      <div id="animatedModal">
-        <div id="closebt-container" class="close-animatedModal close">
-          <%= image_tag 'gnavClose.png', :alt => "close", :size => '50x50'%>
-        </div>
+      </div>
         <div id="modal-content">
+            <div id="closebtn">
+              <a href="http://mixedcho2017.herokuapp.com">
+                <%= image_tag 'gnavClose.png', :alt => "close", :size => '50x50'%>
+              </a>
+            </div>
             <ul>
                 <li><%= link_to 'About us', 'http://mixedcho2017.herokuapp.com/about' %></li>
                 <li><%= link_to 'Events for Freshmen', 'http://mixedcho2017.herokuapp.com/event' %></li>
@@ -16,7 +17,6 @@
                 <li><%= link_to 'Q A', 'http://mixedcho2017.herokuapp.com/about' %></li>
             </ul>
         </div>
-      </div>
     </div>
   <div  id="topSection" class="row">
     <header class="col-xs-12 Heading text-center">

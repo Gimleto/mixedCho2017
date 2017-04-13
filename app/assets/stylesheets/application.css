@@ -44,30 +44,45 @@ p{
   font-weight: 200;
 }
 
-#gnav a.open{
+#modal-botton{
     position: fixed;
     right: 10px;
     top: 10px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1;
 }
 
-#animatedModal{
-  position: relative;
-}
 #modal-content{
   font-family: 'Raleway', Arial, sans-serif;
   padding: 20px;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3498db;
+
+  transition: all .5s;
+  visibility: hidden;
+  opacity: 0;
 }
 
-#closebt-container {
+.openModal #modal-content{
+  transition: all .5s;
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+#closebtn{
     width: 100%;
     text-align: center;
     margin-top: 40px;
 }
 
 #gnav ul{
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   list-style-type:none;
