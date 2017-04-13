@@ -1,0 +1,92 @@
+<% content_for :headercontents do %>
+  <div id="gnav">
+    <nav>
+      <%= link_to 'Home', '/' %>
+    </nav>
+  </div>
+  <div id="topSection" class="row">
+  </div>
+<% end %>
+
+<% content_for :main do %>
+  <div id="secondSection">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+          <h2 class="Heading">Events</h2>
+      </div>
+    </div>
+    <div id="container">
+      <div class="row">
+        <section class ="item item-information">
+           <div class="Hover">
+              <%= image_tag 'eventWel__001.jpg', :alt => "コラム", :class => "image" %>
+              <div class="category">
+                新歓曲
+              </div>
+              <p class="description">
+                『きみ歌えよ』作詩 谷川俊太郎 作曲 信長貴富<br>
+                『ぜんぶ』作詩 さくらももこ 作曲 相澤直人<br>
+                『虹』作詞作曲 森山直太朗・御徒町凧 編曲 信長貴富<br>
+                『ルージュの伝言』作詞作曲 荒井由実 編曲 倉知竜<br>
+              </p>
+           </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class ="item item-information">
+           <div class="Hover">
+              <%= image_tag 'TopImage_002.jpg', :alt => "コラム", :class => "image" %>
+              <div class="category">
+                新歓情報
+              </div>
+              <p class="description">
+                混声合唱団の新歓イベント日程です！練習体験や、先輩と話したり演奏を聴いたり出来る楽しいイベントが盛りだくさん！気軽に来てくださいね！<br>
+              </p>
+           </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class ="item item-event">
+           <div class="Hover">
+              <%= image_tag 'eventWel__002.jpg', :alt => "メインディッシュ", :class => "image" %>
+              <div class="category">
+                新歓イベント
+              </div>
+              <p class="description">
+                おいしいクレープや手作りのお菓子が食べられるこのイベントは女子限定！<br>
+                かっこいい上級生の演奏も聞いたり、女子の先輩とも沢山おしゃべりできますよ♪<br>
+              </p>
+           </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class ="item item-event">
+           <div class="Hover">
+              <%= image_tag 'eventWel__003.jpg', :alt => "メインディッシュ", :class => "image" %>
+              <div class="category">
+                新歓イベント
+              </div>
+              <p class="description">
+                この団特有のイベント！スイパラ、焼き肉、カラオケの中からすきなものを選んで上級生と一緒に楽しめます。<br>
+                なんと全部無料！予約制の早いもの勝ちです。<br>
+              </p>
+           </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class ="item item-event">
+           <div class="Hover">
+              <%= image_tag 'eventWel__004.jpg', :alt => "メインディッシュ", :class => "image" %>
+              <div class="category">
+                新歓イベント
+              </div>
+              <p class="description">
+                萩ホール前でおいしい手料理を食べられます。やっぱり花より団子ですよね！ <br>
+                レクをやったり、先輩たちとお話ししたりみんなで盛り上がりましょう！<br>
+              </p>
+           </div>
+        </section>
+      </div>
+    </div>
+  </div>
+<% end %>
