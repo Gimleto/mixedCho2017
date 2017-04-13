@@ -19,6 +19,9 @@
 $(function () {
     var $body = $('body');
 
+
+    $(window).ready(function (){
+
     //開閉用ボタンをクリックでクラスの切替え
     $('#modal-botton').on('click', function () {
         $body.toggleClass('openModal');
@@ -28,4 +31,11 @@ $(function () {
     $('#closebtn').on('click', function () {
         $body.removeClass('openModal');
     });
+
+    $('.openModal #modal-content ul').on('click', function () {
+        $body.removeClass('openModal');
+    });
+
+    });
+
 });
