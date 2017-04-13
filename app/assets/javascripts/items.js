@@ -20,13 +20,15 @@ $(function(){
   };
 
   function initialize_masonry(){
-      var $container = $('#container').masonry();
+      var $container = $('#container');
       if (flag) {
-          $container.masonry({
-              itemSelector: '.item',
-              isFitWidth: true,
-              columnWidth: 300,
-              gutter: 4
+          $container.imagesLoaded( function() {
+            $container.masonry({
+                itemSelector: '.item',
+                isFitWidth: true,
+                columnWidth: 300,
+                gutter: 4
+            });
           });
       }else{
           $container.masonry('destroy');
