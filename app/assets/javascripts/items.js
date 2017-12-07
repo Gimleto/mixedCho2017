@@ -13,9 +13,9 @@ $(function(){
   function bootstrap(){
     var $item = $('.item');
     if(flag){
-         $item.removeClass('col-xs-12');
+         $item.removeClass('col-12');
     }else{
-         $item.toggleClass('col-xs-12');
+         $item.toggleClass('col-12');
     }
   };
 
